@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="/static/style/estilo.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Enviar notas</a>
+        <img src="/static/assets/estrela_branca.png" alt="">
+    </nav>
+
+    <div class="consulta_produtos">
+        <h2>Média</h2>
+        <table>
+            <tr>
+                <th>Nome do aluno</th>
+                <th>primeira nota</th>
+                <th>Segunda nota</th>
+                <th>Terceira nota</th>
+                <th>Média</th>
+            </tr>
+
+            {% for pro in prod %}
+            <tr>
+                <td>{{ pro.nome_do_aluno }}</td>
+                <td>{{ pro.primeira_nota }}</td>
+                <td>{{ pro.segunda_nota }}</td>
+                <td>{{ pro.terceira_nota }}</td>
+                <td>{{ pro.media }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+   </div>
+</body>
+</html>

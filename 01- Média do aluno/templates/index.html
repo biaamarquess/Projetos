@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do Aluno</title>
+    <link rel="stylesheet" href="/static/style/estilo.css">
+
+</head>
+<body>
+    <div class="background">
+        <img src="/static/assets/dti.png" alt="">
+    </div>
+    
+    <div>
+        <header>
+            <img class="img"  src="/static/assets/estrela_branca.png" alt="">
+
+            <ul class="navigation" >
+                <li>
+                    <a href="" class="navigation_link">Enviar Notas |</a>
+                </li>
+                <li>
+                    <a href="/ver_notas" class="navigation_link" >Ver Notas</a>
+                </li>
+            </ul>
+        </header>  
+
+
+    <div class="media">
+        <form action="/validar_notas" class="media_do_aluno" method="post">
+            <h2>Nome do Aluno:
+                <input class="nome" type="text" name="nome_do_aluno" id="nome_do_aluno"> 
+            </h2>
+
+            <label for="">Nota 1:
+                <input class="um" type="text" name="primeira_nota" id="primeira_nota"> 
+            </label>
+
+            <label for="">Nota 2:
+                <input class="dois" type="text" name="segunda_nota" id="segunda_nota"> 
+            </label>
+
+            <label for="">Nota 3:
+                <input class="tres" type="text" name="terceira_nota" id="terceira_nota"> 
+            </label>
+
+            <div class="cad_produtos_enviar">
+                <button type="submit">Enviar
+                    <a href="/templates/ver_notas.html"></a>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="estrelas">
+        <img src="/static/assets/estrelinha.png" width="70px" alt="">
+    </div>
+</body>
+</html>
